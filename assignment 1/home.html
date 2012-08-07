@@ -1,0 +1,71 @@
+<!DOCTYPE html><!--This is a HTML5 page-->
+<html><!--Inside is a html page-->
+	<head><!--Head of the page-->
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><!--mata information, specifies content type and charset-->
+		<title>Huijie Shen's home page</title><!--title, show on the top of a page-->
+		<link href="css/home.css" rel="stylesheet" type="text/css" /><!--link to a css file-->
+	</head>
+	<body><!--main content of the page-->
+		<div id="left"><!--left part, mainly for self-introduction-->
+			<h1>Welcome to <em>Huijie Shen</em>'s home page!</h1>
+			<p>Hi! My name is <em>Huijie Shen</em><!--emphasisi on my name-->. I am an international student from <span class="country">China</span><!--inline semantic part--> and here for summer session in Berkeley.<br><!--newline-->My basic information is as follows:</p><!--self introduction-->
+			<table border="1"><!--table of my personal information, add border and cellpading of 5-->
+				<tr><!--a row in a table-->
+					<th>information</th><th>details</th><!--header of each column-->
+				</tr>
+				<tr>
+					<td>birthday</td><!--a column in a row--><td><time>1991-12-11</time><!--sematic tag for time in HTML5--></td>
+				</tr>
+				<tr>
+					<td>hobby</td><td>sports and watching films</td>
+				</tr>
+				<tr>
+					<td>favourite food</td><td>Chinese cuisine</td>
+				</tr>
+				<tr>
+					<td>favourite singer</td><td><em>Leslie Cheung</em></td>
+				</tr>
+				<tr>
+					<td>current residence</td><td>Berkeley,CA,US</td>
+				</tr>
+			</table>
+			<p><em>Leslie Cheung</em> is a fantastic singer. Here is one of his songs. Hope you like it, too.</p><!--introduction to my favourite singer-->
+			<audio src="media/leslie.ogg" controls="controls">(Oops! Your browser does not support this format of audio. You may change to a FireFox or Chrome one.)</audio><!--new tag for audio in HTML5-->
+	        <p>Also, I found a sweet and popular song days ago on Youtube, called <em>Call Me Maybe</em> by <em>Carly Rae Jepsen</em> and I would like to share it with you!</p>
+			<video src="media/CallMeMaybe.webm" width="640" height="360" controls="controls">(Oops! Your browser does not support this format of video. You may change to a FireFox or Chrome one.)</video><!--new tag for video in HTML5-->
+			<p>This is my Fackbook profile <a href="http://www.facebook.com/profile.php?id=100004064521022">click&nbsp;here!</a><!--hyperlink to my profile--></p>
+			<p>Nothing in my Fackbook profile? Actually I just created an account in Fackbook, so how about showing you something interesting here?<br>On Independence Day my friends and I went to San Francisco and here are some beautiful pictures we took there.</p>
+			<figure><!--new tag for figure in HTML5-->
+			  	<figcaption>Cute gull at Fisherman's Wharf</figcaption><!--new tag for figure caption in HTML5-->
+			  	<img src="pic/gull.jpg" class="picturesInSF" alt="It takes some time to load the picture."/><!--class name is specified for css; also, alt is specified in case the picture load slowly-->
+			</figure>
+			<figure>
+			  	<figcaption>Spectacular Coit Tower and Transamerica Pyramid</figcaption>
+			  	<img src="pic/tower.jpg" class="picturesInSF" alt="It takes some time to load the picture."/>
+			</figure>
+			<figure>
+			  	<figcaption>Lombard Street. Never miss it in SF!</figcaption>
+			  	<img src="pic/LombardStreet.jpg" class="picturesInSF" alt="It takes some time to load the picture."/>
+			</figure>
+			<figure>
+			  	<figcaption>Cable car. Special transportation in SF.</figcaption>
+			  	<img src="pic/cablecar.jpg" class="picturesInSF" alt="It takes some time to load the picture."/>
+			</figure>
+			<p>You are always welcome to contact me by any of the following emails:</p>
+			<ul><!--unordered list-->
+				<li><a href="mailto:10302010068@fudan.edu.cn">10302010068@fudan.edu.cn</a></li><!--an item in a list, which is also a hyperlink itself-->
+				<li><a href="mailto:carolfdu684@gmail.com">carolfdu684@gmail.com</a></li>
+				<li><a href="mailto:shjcarol@berkeley.edu">shjcarol@berkeley.edu</a></li>
+			</ul>
+		</div>
+		<div id="right"><!--right part, mainly for reflection on problems I encountered-->
+			<h1>Reflection on this assignment</h1>
+			<p>I choose &lt;!DOCTYPE html&gt; for this html page because it includes some HTML5 elements and the browser will know this page is written in HTML5 by this declaration.</p>
+			<p>I meet only a few challenges in this assignment since it is not difficult for me and they are all fixed.<br>The first challenge is that I did not include charset specification and later I add by 'charset=windows-1252'. This is not a usual charset but the HTML5 validator recommend it.</p>
+			<p>Also, since HTML is suggested not for presentation, I have to delete some 'style' thing in tags and write a CSS file for the page. I have to learn something about selectors and layout in CSS. This is a bit challenging for me. But I finally did it. Bravo!</p>
+			<p>Another challenge is the media format in HTML5. I add an audio in this page whose original format is mp3. To my surprise, the default music player did not even show. So I search on the Internet and find that .ogg is supported by Firefox, Chrome and Opera. So I change the format of the audio and it works!</p>
+			<p>As to the standards to various stakeholders, here is my reflection. For programmers, sticking to standards enable them to debug and modify more easily. They should keep good programming style and complying with standards is a part of it. For users, web page written in standard show in the same way in all browsers (in recent versions) and whatever browser they use, they enjoy the the same quality and quantity of information. They do not have to change browser when they open a web page, which is annoying. For search engine and some portable devices, web pages written in standard ensure that search engine will get correct part from the page easily and does not miss any useful information, and portable devices will learn and reconstruct the structure of the page correctly and quickly, showing the page in a appropriate way since their screens are limited in size.</p>
+			<p>Here is an example of an important standard. For a web page, a appropriate charset should be declared for the brower to show the page correctly. Specially, if a page includes some Chinese or other characters except English letters, a right charset must be declared or these characters may be shown in a confusing way. For programmers, it is inconvenient to check for spelling mistakes(sometimes the consequence is not easily detectable for programmers and users may have to face it) and for users, these characters make no sense to them and they may miss some important information. For search engines, this is the same case. So sticking to standard is really important and charset should always be declared explicitly in case we use some characters other than English letters.</p>
+		</div>
+	</body>
+</html>
