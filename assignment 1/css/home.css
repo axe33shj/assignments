@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+table{
+ text-align:center;
+}
+.picturesInSF{
+	width:470px;
+	height:300px;
+}
+body{
+	background-color:#DEF5FF;
+}
+#left{
+	width:67%;
+	float:left;
+	font-size:18px;
+}
+#right{
+	width:30%;
+	float:right;
+	padding-left:10px;
+	border-left:dotted;
+}

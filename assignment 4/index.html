@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>olympicture</title>
+        <link type="text/css" href="./css/lightbox.css" rel="stylesheet" />
+	</head>
+	<body>
+    <img id="bg" src="./bg.png"></img>
+    	<div id="fixed">
+            <p>olympicture<span>--what's new on Instagram about Olympics</span></p>
+            <ul id="display">
+                <li><button class="ultitle" id="tag">by tag</button></li>
+                <li><button class="ultitle" id="event">by event</button></li>
+                <li><button class="ultitle" id="athlete">by athlete</button></li>
+                <li><button class="ultitle" id="other">other...</button></li>
+                <li><button class="ultitle" id="search">search</button></li>
+            </ul>
+            <ul id="tagUl">
+                <li><button id="OlympicsBtn">Olympics</button></li>
+                <li><button id="LondonBtn">London</button></li>
+                <li><button id="OlympicTorchBtn">OlympicTorch</button></li>
+            </ul>
+            <ul id="eventUl">
+                <li><button id="gymBtn">gymnastics</button></li>
+                <li><button id="swimBtn">swimming</button></li>
+                <li><button id="fencingBtn">fencing</button></li>
+            </ul>
+            <ul id="athleteUl">
+            	<li><button id="LeyvaBtn">Danell Leyva</button></li>
+                <li><button id="JamesBtn">LeBron James</button></li>
+                <li><button id="AnthonyBtn">Carmelo Anthony</button></li>
+            </ul>
+            <ul id="otherUl">
+                <li><button id="geoBtn">from Olympic village</button></li>
+                <li><button id="chinaBtn">team China</button></li>
+                <li><button id="usaBtn">team USA</button></li>
+            </ul>
+  		</div>
+      	<div class="pics"></div>
+        <div id="mix">
+        	<div>
+            <p>tag</p>
+            <form name="form1">
+        	<ul>
+            	<li><input type="radio" name="tagRadio" value="olympics">Olympics</li>
+                <li><input type="radio" name="tagRadio" value="olympic">Olympic</li>
+                <li><input type="radio" name="tagRadio" value="london2012">London2012</li>
+           	</ul>
+            </form>
+            </div>
+            <div>
+            <p>from</p>
+            <ul>
+            	<li><input type="radio" name="placeRadio" value="1347234" id="fromOV">Olympic village</li>
+                <li><input type="radio" name="placeRadio" value="-1">Any place</li>
+            </ul>
+            </div> 
+            <input id="searchBtn" type="button" name="button" value="go">
+        </div>
+        <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+		<script src="./js/jquery-ui-1.8.18.custom.min.js"></script>
+        <script src="./js/jquery.smooth-scroll.min.js"></script>
+        <script type="text/javascript" src="./js/javascript.js"></script>
+		<script type="text/javascript" src="./js/lightbox.js"></script>
+	</body>
+</html>
